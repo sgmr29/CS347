@@ -1,18 +1,30 @@
 /************************************************************************/
-/*   PROGRAM NAME: client.c  (works with serverX.c)                     */
+/*   File Name: main.c                                                  */
 /*                                                                      */
-/*   Client creates a socket to connect to Server.                      */
-/*   When the communication established, Client writes data to server   */
-/*   and echoes the response from Server.                               */
+/*   Client uses sockets to connect to the fibs.com server, and         */
+/*     hopefully it also plays backgammom.                              */
 /*                                                                      */
-/*   To run this program, first compile the server_ex.c and run it      */
-/*   on a server machine. Then run the client program on another        */
-/*   machine.                                                           */
-/*                                                                      */
-/*   COMPILE:    gcc -o client main.c -lnsl -lpthread                   */
-/*   TO RUN:     client  server-machine-name                            */
-/*                                                                      */
+/*   Portions of this code were borrowed from code posted at            */
+/*      http://web.mst.edu/~ercal/284/284.html                          */
 /************************************************************************/
+
+/*
+    This file is part of CS347Backgammom.
+
+    CS347Backgammom is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    CS347Backgammom is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with CS347Backgammom.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
 
 #include <stdio.h>
 #include <sys/types.h>
