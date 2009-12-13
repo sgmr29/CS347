@@ -1,9 +1,7 @@
-CC=gcc
-CFLAGS=
 
-client : main.o
-	gcc main.o -o client -lnsl -lpthread
+client : client.cpp AI.cpp BaseAI.cpp
+	g++ client.cpp BaseAI.cpp AI.cpp -o client -lnsl -lpthread
 
 clean :
-	rm -f client main.o
+	rm -f client
 
