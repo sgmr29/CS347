@@ -1,5 +1,5 @@
 /************************************************************************/
-/*   File Name: main.c                                                  */
+/*   File Name: client.cpp                                              */
 /*                                                                      */
 /*   Client uses sockets to connect to the fibs.com server, and         */
 /*     hopefully it also plays backgammom.                              */
